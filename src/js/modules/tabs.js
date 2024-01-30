@@ -20,7 +20,6 @@ function showTabContent(i=0) {
 
 hideTabContent();
 showTabContent(); 
-console.log('obje555ct');
 
 header.addEventListener('click', (e)=> {
     const target =e.target;
@@ -30,7 +29,7 @@ header.addEventListener('click', (e)=> {
             tab.forEach((item, i)=> {
                 if(target==item || target.parentNode==item) {
                     hideTabContent();
-                    showTabContent(i)
+                    showTabContent(i);
                 }
             });
          }
